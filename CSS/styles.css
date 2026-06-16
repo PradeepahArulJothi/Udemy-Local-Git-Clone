@@ -31,6 +31,10 @@ body {
     align-items: center;
     border-bottom: 1px solid grey;
     gap: 10px;
+    position: sticky;
+    top:0;
+    background-color: white;
+    z-index: 1;
 }
 
 .navbar__title {
@@ -75,6 +79,25 @@ body {
     color: #A435F0;
 }
 
+/* Udemy popup */
+
+.purchase-popup{
+position: relative;
+}
+.purchase-popup___1{
+position: absolute;
+background-color: white;
+border:1px solid black;
+width:100px;
+padding:15px;
+right:0;
+top:20px;
+display: none;
+}
+
+.navbar__menu2:hover .purchase-popup___1{
+    display: block;
+}
 .navbar__menu2__1 {
     gap: 20px;
 
@@ -131,6 +154,7 @@ body {
 .navbar__search input {
     border: none;
     width: 85%;
+    background-color: transparent;
 }
 
 .navbar__search input:focus {
