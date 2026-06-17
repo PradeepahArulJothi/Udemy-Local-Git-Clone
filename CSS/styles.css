@@ -56,6 +56,10 @@ body {
     margin-right: 10px;
 }
 
+.navbar__menu2__bars {
+    display: none;
+}
+
 .navbar__menu__common {
     border: none;
     background-color: white;
@@ -198,7 +202,7 @@ body {
 .sale-image__1 {
     position: absolute;
     bottom: 40PX;
-    left: 70px;
+    left: 40px;
     background-color: white;
     padding: 10px;
     width: 30%;
@@ -440,7 +444,7 @@ body {
 }
 
 @media screen and (max-width:500px) {
-    .navbar__search .navbar__title__1 {
+    .navbar__title__1 {
         width: 100%;
     }
 
@@ -476,5 +480,13 @@ body {
     .skill__1 div:hover {
         border-bottom: none;
 
+    }
+
+    .navbar__search {
+        width: 60%;
+    }
+
+    .navbar__menu2__bars {
+        display: block;
     }
 }
