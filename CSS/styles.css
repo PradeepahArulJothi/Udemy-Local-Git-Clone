@@ -32,7 +32,7 @@ body {
     border-bottom: 1px solid grey;
     gap: 10px;
     position: sticky;
-    top:0;
+    top: 0;
     background-color: white;
     z-index: 1;
 }
@@ -81,23 +81,25 @@ body {
 
 /* Udemy popup */
 
-.purchase-popup{
-position: relative;
-}
-.purchase-popup___1{
-position: absolute;
-background-color: white;
-border:1px solid black;
-width:100px;
-padding:15px;
-right:0;
-top:20px;
-display: none;
+.purchase-popup {
+    position: relative;
 }
 
-.navbar-Udemy-tech:hover .purchase-popup___1{
+.purchase-popup___1 {
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    width: 100px;
+    padding: 15px;
+    right: 0;
+    top: 20px;
+    display: none;
+}
+
+.navbar-Udemy-tech:hover .purchase-popup___1 {
     display: block;
 }
+
 .navbar__menu2__1 {
     gap: 20px;
 
@@ -181,9 +183,12 @@ display: none;
     padding: 10px;
     cursor: pointer;
 }
-.categoties p:hover{
-background-color: #A435F0;
+
+.categoties p:hover {
+    transition: 1s;
+    background-color:#F9922D;
 }
+
 .sale-image {
     position: realtive;
 }
@@ -195,24 +200,43 @@ background-color: #A435F0;
 
 .sale-image__1 {
     position: absolute;
-    bottom:40PX;
+    bottom: 40PX;
     left: 70px;
     background-color: white;
     padding-left: 20px;
     padding-right: 20px;
     width: 30%;
     height: 50%;
-}
-.sale-image__1  h1{
-    color: #2A2B3F;
-    padding:15px;
+    animation-name: sale-zoom;
+    animation-duration: 3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+  }
+
+@keyframes sale-zoom {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
-.sale-image__1  p{
-     color: #828282;
-    padding:10px;
-    margin-bottom: 10px;;
+.sale-image__1 h1 {
+    color: #2A2B3F;
+    padding: 15px;
 }
+
+.sale-image__1 p {
+    color: #828282;
+    padding: 10px;
+    margin-bottom: 10px;
+    ;
+}
+
 .sale-image div button {
     background-color: #6D28D2;
     color: white;
@@ -228,39 +252,41 @@ background-color: #A435F0;
     background-color: #A435F0
 }
 
-.topics{
-    margin:15px;
+.topics {
+    margin: 15px;
 }
 
-.topics_category{
-    display:flex;
-    gap:10px;
+.topics_category {
+    display: flex;
+    gap: 10px;
     flex-wrap: wrap;
     margin-top: 15px;
 
 }
-.topics_category p{
-padding: 15px;
-border: 2px solid grey;
-flex-basis: 25%;    
+
+.topics_category p {
+    padding: 15px;
+    border: 2px solid grey;
+    flex-basis: 25%;
 }
-.recommented{
+
+.recommented {
     padding: 10px;
-  }
-
-.recommented-container{
-display:flex;
-flex-wrap: wrap;
-justify-content: space-around;
-gap:30px;
 }
 
-.recommented p{
-    padding-top:10px;
-    padding-bottom:10px;
+.recommented-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
 }
 
-.course-card{
+.recommented p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.course-card {
     width: 20%;
     height: 30%;
     flex-basis: 15%;
@@ -268,101 +294,117 @@ gap:30px;
     background-color: #F6F7F9;
     border: 1px solid #F6F7F9;
     border-radius: 8px;
-    padding:10px;
+    padding: 10px;
     cursor: pointer;
 }
-.course-card:hover{
-background-color: #d3d3d3;
+
+.course-card:hover {
+    background-color: #d3d3d3;
 }
-.course-card img{
+
+.course-card img {
     width: 100%;
     height: 50%;
 }
-.pad-10{
-    padding-top:10px;
+
+.pad-10 {
+    padding-top: 10px;
 }
-.mar-10{
-    margin-top:10px;
+
+.mar-10 {
+    margin-top: 10px;
 }
-.pad-left-10{
-    padding-left:10px;
+
+.pad-left-10 {
+    padding-left: 10px;
 }
-.course-card__1{
+
+.course-card__1 {
     background-color: #C2E9EB;
-    color:black;
+    color: black;
     padding: 3px;
-    border-radius:5px ;
+    border-radius: 5px;
     border: none;
 }
-.footer{
+
+.footer {
     padding: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid grey;
     gap: 10px;
-    color:white;
-    background-color:black;
-}
-.footer_1 {
-    display:flex;
-    align-items: center;
-    gap: 10px;
-    width:20%;  
+    color: white;
+    background-color: black;
 }
 
-.footer_1_img{
+.footer_1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 20%;
+}
+
+.footer_1_img {
     width: 30%;
     height: 30%;
     cursor: pointer;
 }
-.footer-2{
-cursor: pointer;
+
+.footer-2 {
+    cursor: pointer;
 }
-.footer-2:hover{
+
+.footer-2:hover {
     border-bottom: 2px solid white;
 }
-.footer_3{
+
+.footer_3 {
     display: flex;
-   cursor: pointer;
-   align-items: center;
+    cursor: pointer;
+    align-items: center;
 }
-.explore-option{
+
+.explore-option {
     background-color: #2A2B3F;
     padding: 20px;
-   border-top: white;
-   color:white;
+    border-top: white;
+    color: white;
 
 }
 
-.explore-option h3{
+.explore-option h3 {
     padding-bottom: 10px;
-    padding-top:20px;
+    padding-top: 20px;
 }
-.skill{
+
+.skill {
     display: flex;
     justify-content: space-between;
     padding-right: 20px;
     padding-bottom: 20px;
     padding-top: 20px;
-    
+
 }
-.skill__1{
+
+.skill__1 {
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
 }
-.skill__1 h4{
+
+.skill__1 h4 {
     padding-bottom: 10px;
 }
 
-.skill__1 div{
+.skill__1 div {
     padding-top: 10px;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
-    display: block; 
+    display: block;
     width: fit-content;
 }
-.skill__1 div:hover{
+
+.skill__1 div:hover {
     border-bottom: 1px solid white;
-    cursor: pointer;  
+    cursor: pointer;
 }
