@@ -407,7 +407,6 @@ body {
     cursor: pointer;
 }
 
-
 @media screen and (max-width: 800px) {
     body {
         font-size: 10px;
@@ -418,7 +417,7 @@ body {
     }
 
     .navbar__search input {
-        width: 50%;
+        width: 80%;
     }
 
     .navbar__menu__common {
@@ -434,12 +433,23 @@ body {
     .navbar__search .navbar__title__1 {
         width: 100%;
     }
-
 }
 
 @media screen and (max-width:1000px) {
     .navbar__menu1__3 {
         display: none;
+    }
+
+    .navbar__search input {
+        width: 80%;
+    }
+
+    .navbar__search {
+        width: 100%;
+    }
+
+    .navbar__menu2__bars {
+        display: block;
     }
 }
 
@@ -458,10 +468,6 @@ body {
 
     .sale-image {
         position: relative;
-    }
-
-    .navbar__menu2-option {
-        display: none;
     }
 
     .navbar__title__1 {
@@ -485,8 +491,15 @@ body {
     .navbar__search {
         width: 60%;
     }
+}
 
-    .navbar__menu2__bars {
-        display: block;
+@media screen and (min-width:800px) {
+    .sale-image {
+        position: relative;
+    }
+
+    .sale-image__1 {
+        position: absolute;
+        bottom: 25PX;
     }
 }
