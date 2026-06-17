@@ -5,6 +5,7 @@
 
 body {
     font-family: "Gabarito", sans-serif;
+    font-size: 16px;
 }
 
 .offer-section {
@@ -122,8 +123,8 @@ body {
 
 .navbar__menu3__1 {
     padding: 8px;
-    font-size: 16px;
-    font-weight: 600;
+    /* font-size: 16px; */
+    /* font-weight: 600; */
     color: #892DE1;
     border: 1px solid #892DE1;
     border-radius: 10px;
@@ -135,8 +136,8 @@ body {
 
 .navbar__menu3__2 {
     padding: 8px;
-    font-size: 16px;
-    font-weight: 600;
+    /* font-size: 16px; */
+    /* font-weight: 600; */
     color: white;
     border: 1px solid #892DE1;
     border-radius: 10px;
@@ -186,7 +187,7 @@ body {
 
 .categoties p:hover {
     transition: 1s;
-    background-color:#F9922D;
+    background-color: #F9922D;
 }
 
 .sale-image {
@@ -203,15 +204,14 @@ body {
     bottom: 40PX;
     left: 70px;
     background-color: white;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px;
     width: 30%;
-    height: 50%;
+    height: auto;
     animation-name: sale-zoom;
     animation-duration: 3s;
     opacity: 0;
     animation-fill-mode: forwards;
-  }
+}
 
 @keyframes sale-zoom {
     0% {
@@ -244,7 +244,7 @@ body {
     padding: 15px;
     margin-left: 10px;
     border: none;
-    font-weight: 800;
+    /* font-weight: 800; */
 
 }
 
@@ -398,7 +398,7 @@ body {
 
 .skill__1 div {
     padding-top: 10px;
-    font-size: 14px;
+    /* font-size: 14px; */
     font-family: Arial, Helvetica, sans-serif;
     display: block;
     width: fit-content;
@@ -407,4 +407,40 @@ body {
 .skill__1 div:hover {
     border-bottom: 1px solid white;
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .navbar__search input {
+        width: 50%;
+    }
+
+    .navbar__menu__common {
+        font-size: 10px;
+    }
+
+    .sale-image img {
+        width: 100%;
+        height: 350px;
+
+    }
+
+    .navbar__search .navbar__title__1 {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+    .navbar__menu1__3 {
+        display: none;
+    }
 }
