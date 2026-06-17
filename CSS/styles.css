@@ -491,6 +491,9 @@ body {
     .navbar__search {
         width: 60%;
     }
+    .categoties{
+        display: none;
+    }
 }
 
 @media screen and (min-width:800px) {
